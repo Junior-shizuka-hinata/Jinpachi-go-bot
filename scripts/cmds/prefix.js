@@ -15,7 +15,7 @@ module.exports = {
  if (event.body && event.body.toLowerCase() === "prefix") {
  return message.reply({
  body: `\n.∧,,,∧   ~┏━━━━━━┓\n.(  ̳• · • ̳)  ~    𝑷𝑹𝑬𝑭𝑰𝑿 ↠★ \n/       づ  ~┗━━━━━━┛`,
- attachment: await global.utils.getStreamFromURL("https://i.ibb.co/0MFMNpq/image.jpg")
+ attachment: await global.utils.getStreamFromURL("https://i.ibb.co/wyKCdZm/image.jpg")
  });
  }
  }

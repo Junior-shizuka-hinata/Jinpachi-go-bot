@@ -28,7 +28,7 @@ async function getAIResponse(input, userId, messageID) {
         { url: 'https://ai-chat-gpt-4-lite.onrender.com/api/hercai', params: { question: input } }
     ];
 
-    let response = "𝗕𝗼𝗻𝗷𝗼𝘂𝗿! 𝗝𝗲 𝘀𝘂𝗶𝘀 𝗹à 𝗽𝗼𝘂𝗿 𝘁'𝗮𝗶𝗱𝗲𝗿 𝗲𝘁 𝗿é𝗽𝗼𝗻𝗱𝗿𝗲 à 𝘁𝗲𝘀 𝗾𝘂𝗲𝘀𝘁𝗶𝗼𝗻𝘀. 𝗡'𝗵é𝘀𝗶𝘁𝗲 𝗽𝗮𝘀 à 𝗺𝗲 𝗱𝗲𝗺𝗮𝗻𝗱𝗲𝗿 𝗰𝗲 𝗾𝘂𝗲 𝘁𝘂 𝘃𝗲𝘂𝘅!....🍀";
+    let response = "𝗕𝗼𝗻𝗷𝗼𝘂𝗿! 𝗕𝗲𝘀𝗼𝗶𝗻 𝗱'𝗮𝗶𝗱𝗲..?";
     let currentIndex = 0;
 
     for (let i = 0; i < services.length; i++) {
@@ -51,7 +51,7 @@ async function getAIResponse(input, userId, messageID) {
 
 module.exports = {
     config: {
-        name: 'hinata',
+        name: 'shizuka',
         author: 'aesther',
         role: 0,
         category: 'ai',
@@ -60,20 +60,20 @@ module.exports = {
     onStart: async function ({ api, event, args }) {
         const input = args.join(' ').trim();
         if (!input) {
-            api.sendMessage(`🫰✰`, event.threadID, event.messageID);
+            api.sendMessage(`Oui..?🌺`, event.threadID, event.messageID);
             return;
         }
 
         const { response, messageID } = await getAIResponse(input, event.senderID, event.messageID);
-        api.sendMessage(`✰...𝔻𝕒𝕧𝕚𝕕 𝐩𝐫𝐨𝐜𝐞̀𝐝𝐞 𝐚 𝐯𝐨𝐭𝐫𝐞 𝐫𝐞𝐪𝐮𝐞̂𝐭𝐞...✰`, event.threadID, messageID);
+        api.sendMessage(`✰... veuillez patienter...✰`, event.threadID, messageID);
     },
     onChat: async function ({ event, message }) {
         const messageContent = event.body.trim().toLowerCase();
-        if (messageContent.startsWith("hinata")) {
-            const input = messageContent.replace(/^hinata\s*/, "").trim();
+        if (messageContent.startsWith("shizuka")) {
+            const input = messageContent.replace(/^shizuka\s*/, "").trim();
             const { response, messageID } = await getAIResponse(input, event.senderID, message.messageID);
             // Construct message with special fonts
-            const formattedResponse = ` ✿❯─-───💚───-─❮✿\n\n✿─❮${response}❯─✿\n \n✿❯─-───💚───-─❮✿`;
+            const formattedResponse = ` ✿❯─-───🌺───-─❮✿\n\n✿─❮${response}❯─✿\n \n✿❯─-───💚───-─❮✿`;
             message.reply(formattedResponse, messageID);
         }
     }

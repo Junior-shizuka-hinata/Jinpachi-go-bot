@@ -9,7 +9,7 @@ module.exports = {
     shortDescription: "Amuses toi bien au jeu du hasard",
     longDescription: "Seul le hasard tu rendras riche ou pauvre...Bonne chance",
     category: "game",
-    guide: "{pn} <Hina/Ghost> <amount of money>"
+    guide: "{pn} <Jr/shizu> <amount of money>"
   },
 
   onStart: async function ({ args, message, usersData, event }) {
@@ -18,8 +18,8 @@ module.exports = {
     const user = event.senderID;
     const userData = await usersData.get(event.senderID);
 
-    if (!["hina", "ghost"].includes(betType)) {
-      return message.reply("🍀 𝘾𝙝𝙤𝙞𝙨𝙞𝙨 : '𝘏𝘐𝘕𝘈' 𝙤𝙪 '𝘎𝘏𝘖𝘚𝘛'.");
+    if (!["jr", "shizu"].includes(betType)) {
+      return message.reply("🍀 𝘾𝙝𝙤𝙞𝙨𝙞𝙨 : '𝗝𝗥' 𝙤𝙪 '𝘀𝗵𝗶𝘇𝘂'.");
     }
 
     if (!Number.isInteger(betAmount) || betAmount < 50) {
@@ -46,7 +46,7 @@ module.exports = {
     const resultString = results.join(" | ");
 
     if ((winConditions[betType] && Math.random() <= 0.4) || (!winConditions[betType] && Math.random() > 0.4)) {
-      const winAmount = 4 * betAmount;
+      const winAmount = 5 * betAmount;
       userData.money += winAmount;
       await usersData.set(event.senderID, userData);
       return message.reply(`╭━━━━━━━━━━━◆\n│🎀.∘❀🍀𝑮𝑨𝑴𝑬🍀❀∘.🎀\n├━━━━━━━━━━━◆\n│    ✅🍀[ ${resultString} ]🍀✅\n├━━━━━━━━━━━◆\n│🎉| 𝐁𝐢𝐞𝐧 𝐣𝐨𝐮𝐞́ 𝐭'𝐚𝐬 𝐠𝐚𝐠𝐧𝐞\n├━━━━━━━━━━━◆\n│🎉🎀${winAmount} 𝐛𝐚𝐥𝐥𝐞𝐬🎀🎉!\n├━━━━━━━━━━━◆\n│☆.(⊃✧ω✧)🌟(.✧ᴗ⁠ ✧⊂).\n╰━━━━━━━━━━━◆`);

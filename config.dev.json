@@ -18,15 +18,16 @@
   },
   "adminBot": [
     "61556172651835",
-    "61562378213770"
+    "61562378213770",
+    "61559323114919"
   ],
   "whiteListMode": {
     "enable": false,
     "whiteListIds": [],
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
-  "nickNameBot": "*ASSISTANT SHIZUKA JUNIOR*",
-  "prefix": "🌺",
+  "nickNameBot": "*☆A̲S̲S̲I̲S̲T̲A̲N̲T̲☆S̲H̲I̲Z̲U̲K̲A̲☆J̲U̲N̲I̲O̲R̲☆*",
+  "prefix": "★",
   "database": {
     "type": "sqlite",
     "uriMongodb": "",

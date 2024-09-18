@@ -34,17 +34,17 @@ module.exports = {
 			noAdmin: "Hiện tại bot chưa có admin nào"
 		},
 		en: {
-			missingMessage: "💚...Veuillez saisir le message que vous souhaitez envoyer à l'administrateur...🍀[prefix+Callad+message]",
-			sendByGroup: "\n- Sent from group: %1\n- Thread ID: %2",
-			sendByUser: "\n- 💚Envoyé par l'utilisateur 🍀",
-			content: "\n\nContent:\n─────────────────💚\n%1\n─────────────────💚\nRépondez à ce message pour envoyer un message à l'utilisateur...🍀",
-			success: "🎉Votre message a été envoyé avec succès à l'administrateur ...!💚\n%2",
-			failed: "An error occurred while sending your message to %1 admin\n%2\nCheck console for more details",
-			reply: "📍 REPONSE DE L'ADMINISTRATEUR💚%1🍀:\n─────────────────🍀\n%2\n─────────────────🍀\n Répondez à ce message pour continuer à envoyer un message à l'administrateur...🍀",
+			missingMessage: "💚...Veuillez saisir le message que vous souhaitez envoyer à l'administrateur...🍀\n[prefix+Callad+message]",
+			sendByGroup: "\n╭━━━━━━━━━━━◆\n│𝗠𝗲𝘀𝘀𝗮𝗴𝗲 𝗲𝗻𝘃𝗼𝘆𝗲́\n│𝗱𝗲𝗽𝘂𝗶𝘀 𝗹𝗲 𝗴𝗿𝗼𝘂𝗽𝗲:\n│[%1]\n│ Thread ID\n│%2\n╰━━━━━━━━━━━◆",
+			sendByUser: "\n╭━━━━━━━━━━━◆\n│ Message de l'utilisateur\n╰───────────◆",
+			content: "\n🍀[✎﹏%1]🍀\n╭━━━━━━━━━━━◆\n│Réponds à ce message\n│pour envoyer ton\n│message à l'utilisateur🍀\n├━━━━━━━━━━━◆\n│✧.（〜^∇^)💚(^∇^〜)°.❁\n╰━━━━━━━━━━━◆",
+			success: "\n.   /)    /)\n.  (｡•∇•｡)〝₎₎ 𝐻𝐼𝑁𝐴𝑇𝐴....°-`✦\n╭∪━∪━━━━━━━━◆\n│💚❀🍀𝑴𝑬𝑺𝑺𝑨𝑮𝑬🍀❀💚\n├━━━━━━━━━━━◆\n│𝗠𝗲𝘀𝘀𝗮𝗴𝗲 𝗲𝗻𝘃𝗼𝘆𝗲́ 𝗮\n│%1 𝗮𝗱𝗺𝗶𝗻(𝘀) 𝗮𝘃𝗲𝗰\n│𝘀𝘂𝗰𝗰𝗲̀𝘀..!\n│%2\n├━━━━━━━━━━━◆\n│(❀╹з╹)🍀(≧ε≦)\n╰━━━━━━━━━━━◆",
+			failed: "\n. ∧,,,∧\n. (  ̳• · • ̳)〝₎₎ 𝐻𝐼𝑁𝐴𝑇𝐴....°-`✦\n╭∪━∪━━━━━━━━◆\n│💚❀🍀𝑴𝑬𝑺𝑺𝑨𝑮𝑬🍀❀💚\n├━━━━━━━━━━━◆\n𝘌𝘤𝘩𝘦𝘤 𝘥𝘦 𝘭'𝘦𝘯𝘷𝘰𝘪𝘦\n│𝘥𝘶 𝘮𝘦𝘴𝘴𝘢𝘨𝘦 𝘢\n│%1 𝘢𝘥𝘮𝘪𝘯\n│%2\n├━━━━━━━━━━━◆\n│(Ɔ ˘⌣˘)🚫(˘⌣˘ C).\n╰━━━━━━━━━━━◆",
+			reply: "\n.   /)    /)\n.  (ᗒ∇ᗕ)〝₎₎ 𝐻𝐼𝑁𝐴𝑇𝐴....°-`✦\n╭∪━∪━━━━━━━━◆\n│💚❀🍀𝑴𝑬𝑺𝑺𝑨𝑮𝑬🍀❀💚\n├━━━━━━━━━━━◆\n│📍 REPONSE DE\n│L'ADMINISTRATEUR \n│%1\n╰━━━━━━━━━━━◆\n[✎﹏%2﹏﹏✏]\n╭━━━━━━━━━━━◆\n│𝗥𝗲́𝗽𝗼𝗻𝗱𝘀 𝗮̀ 𝗰𝗲\n│𝗺𝗲𝘀𝘀𝗮𝗴𝗲 𝗽𝗼𝘂𝗿 𝗰𝗼𝗻𝘁𝗶𝗻𝘂𝗲𝗿\n│𝗮̀ 𝗱𝗶𝘀𝗰𝘂𝘁𝗲𝗿 𝗮𝘃𝗲𝗰\n│𝗹'𝗮𝗱𝗺𝗶𝗻\n├━━━━━━━━━━━◆\n│✧.(⊃^ ω ^)🍀(⁠・⁠﹏•ლ⁠).\n╰━━━━━━━━━━━◆",
 			replySuccess: "💚Votre réponse a été envoyé à l'administrateur avec succès !!🎉",
-			feedback: "📨 Réponse de l'utilisateur 💚%1🍀:\n- User ID: %2%3\n\nContent:\n─────────────────💚\n%4\n─────────────────💚\nRépondez à ce message pour envoyer un message à l'administrateur... 🍀",
+			feedback: "\n.   /)    /)\n.  (◔ ω ◔)〝₎₎ 𝐻𝐼𝑁𝐴𝑇𝐴....°-`✦\n╭∪━∪━━━━━━━━◆\n│💚❀🍀𝑴𝑬𝑺𝑺𝑨𝑮𝑬🍀❀💚\n├━━━━━━━━━━━◆\n│𝑴𝑬𝑺𝑺𝑨𝑮𝑬 𝑫𝑬\n│ 𝑳'𝑼𝑻𝑰𝑳𝑰𝑺𝑨𝑻𝑬𝑼𝑹\n│%1\n├━━━━━━━━━━━◆\n│𝗦𝗼𝗻 𝘂𝗶𝗱\n│%2n│%3\n╰━━━━━━━━━━━◆\n[✎﹏%4﹏]\n╭━━━━━━━━━━━◆\n\n├━━━━━━━━━━━◆\n│𝑹𝒆́𝒑𝒐𝒏𝒅𝒔 𝒂̀ 𝒄𝒆 𝒎𝒆𝒔𝒔𝒂𝒈𝒆\n│𝒑𝒐𝒖𝒓 𝒄𝒐𝒏𝒕𝒊𝒏𝒖𝒆𝒓 𝒍𝒂\n│𝒅𝒊𝒔𝒄𝒖𝒔𝒔𝒊𝒐𝒏 𝒂𝒗𝒆𝒄\n│𝒍'𝒖𝒕𝒊𝒍𝒊𝒔𝒂𝒕𝒆𝒖𝒓\n├━━━━━━━━━━━◆\n│✧.(●´ ᴈ`)🍀(ᴖ ᴑ ᴖ๑) .\n╰━━━━━━━━━━━◆",
 			replyUserSuccess: "💚Votre réponse a été envoyé avec succès..🎉",
-			noAdmin: "J'ai pas d'admin pour le moment 😐☘"
+			noAdmin: "𝐉𝐄 𝐍'𝐀𝐈 𝐏𝐀𝐒 𝐃'𝐀𝐃𝐌𝐈𝐍 𝐏𝐎𝐔𝐑 𝐋𝐄 𝐌𝐎𝐌𝐄𝐍𝐓"
 		}
 	},
 
@@ -56,9 +56,9 @@ module.exports = {
 		if (config.adminBot.length == 0)
 			return message.reply(getLang("noAdmin"));
 		const senderName = await usersData.getName(senderID);
-		const msg = "💚=📨 🍀MESSAGE 🍀📨=💚"
-			+ `\n- User Name: ${senderName}`
-			+ `\n- User ID: ${senderID}`
+		const msg = "\n.   /)    /)\n.  (｡•∇•｡)〝₎₎𝗠𝗲𝘀𝘀𝗮𝗴𝗲.°✦\n╭∪━∪━━━━━━━━◆"
+			+ `\n│𝗘𝗻𝘃𝗼𝘆𝗲́ 𝗽𝗮𝗿\n│${senderName}\n├━━━━━━━━━━━◆`
+			+ `\n│𝗦𝗼𝗻 𝘂𝗶𝗱 𝗲𝘀𝘁\n│${senderID}\n╰━━━━━━━━━━━◆`
 			+ (isGroup ? getLang("sendByGroup", (await threadsData.get(threadID)).threadName, threadID) : getLang("sendByUser"));
 
 		const formMessage = {
@@ -103,7 +103,7 @@ module.exports = {
 		let msg2 = "";
 		if (successIDs.length > 0)
 			msg2 += getLang("success", successIDs.length,
-				adminNames.filter(item => successIDs.includes(item.id)).map(item => ` <@${item.id}> (${item.name})`).join("\n")
+				adminNames.filter(item => successIDs.includes(item.id)).map(item => ` \n│<@${item.id}>\n│(${item.name})`).join("\n│")
 			);
 		if (failedIDs.length > 0) {
 			msg2 += getLang("failed", failedIDs.length,

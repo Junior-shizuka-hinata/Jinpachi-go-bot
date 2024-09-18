@@ -1,11 +1,11 @@
 const axios = require('axios');
 
 const Prefixes = [
-  'ghost', 
-  'ghost',
-  'ghost',
-  'ghost',
-  'ghost',
+  'junior', 
+  'junior',
+  'junior',
+  'junior',
+  'junior',
 ];
 
 module.exports = {

@@ -16,7 +16,7 @@ module.exports = {
     try {
       const amount = parseInt(args[0]);
       if (isNaN(amount) || amount <= 0) {
-        return message.reply("🍀𝐕𝐞𝐮𝐢𝐥𝐥𝐞𝐳 𝐅𝐨𝐮𝐫𝐧𝐢𝐫 𝐮𝐧 𝐦𝐨𝐧𝐭𝐚𝐧𝐭 𝐝'𝐚𝐫𝐠𝐞𝐧𝐭 𝐕𝐚𝐥𝐢𝐝𝐞..💚");
+        return message.reply("🍀𝐕𝐞𝐮𝐢𝐥𝐥𝐞𝐳 𝐅𝐨𝐮𝐫𝐧𝐢𝐫 𝐮𝐧 𝐦𝐨𝐧𝐭𝐚𝐧𝐭 𝐝'𝐚𝐫𝐠𝐞𝐧𝐭 𝐕𝐚𝐥𝐢𝐝𝐞..🌺");
       }
 
       const senderID = event.senderID;
@@ -24,7 +24,7 @@ module.exports = {
       const userData = await usersData.get(senderID);
 
       if (amount > userData.money) {
-        return message.reply("ũ𝐃𝐞́𝐬𝐨𝐥𝐞́ 𝐭𝐮 𝐧'𝐚 𝐩𝐥𝐮𝐬 𝐝'𝐚𝐫𝐠𝐞𝐧𝐭 𝐩𝐨𝐮𝐫 𝐣𝐨𝐮𝐞𝐫 𝐚̀ 𝐜𝐞 𝐣𝐞𝐮𝐱..💚");
+        return message.reply("ũ𝐃𝐞́𝐬𝐨𝐥𝐞́ 𝐭𝐮 𝐧'𝐚 𝐩𝐥𝐮𝐬 𝐝'𝐚𝐫𝐠𝐞𝐧𝐭 𝐩𝐨𝐮𝐫 𝐣𝐨𝐮𝐞𝐫 𝐚̀ 𝐜𝐞 𝐣𝐞𝐮𝐱..🌺");
       }
 
       const sentMessage = await message.reply("🎁 🎁 🎁");

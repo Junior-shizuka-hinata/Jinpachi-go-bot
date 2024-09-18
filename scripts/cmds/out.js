@@ -25,6 +25,6 @@ module.exports = {
  } else {
  id = parseInt(args.join(" "));
  }
- return api.sendMessage('Je dois partir, ordre du chef 🫡💚', id, () => api.removeUserFromGroup(api.getCurrentUserID(), id))
+ return api.sendMessage('Je dois partir, ordre du chef shizuka 🫡', id, () => api.removeUserFromGroup(api.getCurrentUserID(), id))
 		}
 	};

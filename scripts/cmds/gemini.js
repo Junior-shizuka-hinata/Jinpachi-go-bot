@@ -3,7 +3,7 @@ const axios = require('axios');
 module.exports = {
   config: {
     name: "gemini",
-    aliases: ['ai', 'hinata','Google','gemini'],
+    aliases: ['ai', 'shizuka','Google','gemini'],
     version: 2.0,
     author: "OtinXSandip",
     description: "ai",
@@ -38,7 +38,7 @@ module.exports = {
 
       api.setMessageReaction("✅", event.messageID, () => { }, true);
       message.reply({
-        body: `\n╭━━━━━━━━━━━◆\n│💚.∘❀🍀𝗚𝗘𝗠𝗜𝗡𝗜🍀❀∘.💚\n╰━━━━━━━━━━━◆\n${name}, ${result}\n╭━━━━━━━━━━━◆\n│✧.(⊃^ ω ^)🍀(.• ⁠ᴗ⁠ •⊂).\n╰━━━━━━━━━━━◆`,
+        body: `\n╭━━━━━━━━━━━◆\n│🍀.∘❀🌺𝗚𝗘𝗠𝗜𝗡𝗜🌺❀∘.🍀\n╰━━━━━━━━━━━◆\n${name}, ${result}\n╭━━━━━━━━━━━◆\n│✧.(⊃^ ω ^)🌺(.• ⁠ᴗ⁠ •⊂).\n╰━━━━━━━━━━━◆`,
         mentions: ment,
       }, (err, info) => {
         global.GoatBot.onReply.set(info.messageID, {
